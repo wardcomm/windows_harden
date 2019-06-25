@@ -1,30 +1,40 @@
 ---
 - include: access.yml
+  when: ansible_facts['os_family'] == 'Windows'
   tags: access
 
 - include: account.yml
+  when: ansible_facts['os_family'] == 'Windows'
   tags: account
 
 - include: audit.yml
+  when: ansible_facts['os_family'] == 'Windows'
   tags: audit
 
 - include: ie.yml
+  when: ansible_facts['os_family'] == 'Windows'
   tags: ie
 
 - include: misc.yml
+  when: ansible_facts['os_family'] == 'Windows'
   tags: misc
 
 - include: password_policy.yml
+  when: ansible_facts['os_family'] == 'Windows'
   tags: password_policy
 
 - include: powershell.yml
+  when: ansible_facts['os_family'] == 'Windows'
   tags: powershell
 
 - include: rdp.yml
+  when: ansible_facts['os_family'] == 'Windows'
   tags: rdp
 
 - include: security_policy.yml
+  when: ansible_facts['os_family'] == 'Windows'
   tags: security_policy
 
 - include: user_rights.yml
+  when: ansible_facts['os_family'] == 'Windows'
   tags: user_rights
