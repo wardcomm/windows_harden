@@ -1,0 +1,5 @@
+---
+- hosts: localhost
+
+  roles:
+    - wardcomm.windows_harden
