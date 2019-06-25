@@ -1,9 +1,9 @@
 [Unicode]
-Unicode=yes
+Unicode = yes
 
 [Version]
-signature="$CHICAGO$"
-Revision=1
+signature = "$CHICAGO$"
+Revision = 1
 
 [System Access]
 PasswordComplexity = {{win_security_PasswordComplexity}}
@@ -17,4 +17,3 @@ SeTcbPrivilege = {{win_security_SeTcbPrivilege}}
 SeMachineAccountPrivilege = {{win_security_SeMachineAccountPrivilege}}
 SeTrustedCredManAccessPrivilege = {{win_security_SeTrustedCredManAccessPrivilege}}
 SeNetworkLogonRight = {{win_security_SeNetworkLogonRight}}
-
