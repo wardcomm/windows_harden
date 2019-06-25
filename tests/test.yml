@@ -1,5 +1,12 @@
 ---
-- hosts: localhost
-  remote_user: root
-  roles:
-    - windows_harden
+
+- hosts: all
+  gather_facts: false
+  vars:
+    first: 'one'
+    second: 'fine'
+    third: 'day'
+    results: ['{{ first  }}', '{{ second  }}', '{{ third  }}']
+  tasks:
+    - debug:
+        var: results
